@@ -11,3 +11,14 @@ function agregarAmigo(){
     }
     amigosIngresados.push(nombre);
 }
+// Función para actualizar la lista
+function actualizarLista(){
+    let lista = document.getElementById("listaAmigos");
+    lista.innerHTML = "";
+
+    amigosIngresados.forEach((amigo) => {
+        let li=document.createElement("li");
+        li.textContent= amigo;
+        lista.appendChild(li);
+    });
+}

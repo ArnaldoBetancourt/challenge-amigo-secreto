@@ -10,6 +10,9 @@ function agregarAmigo(){
         return;
     }
     amigosIngresados.push(nombre);
+    actualizarLista();
+    input.value = "";
+
 }
 // Función para actualizar la lista
 function actualizarLista(){
